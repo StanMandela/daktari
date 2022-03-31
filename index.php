@@ -1,315 +1,414 @@
-<?php
-/**
- * CodeIgniter
- *
- * An open source application development framework for PHP
- *
- * This content is released under the MIT License (MIT)
- *
- * Copyright (c) 2014 - 2019, British Columbia Institute of Technology
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- * THE SOFTWARE.
- *
- * @package	CodeIgniter
- * @author	EllisLab Dev Team
- * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc. (https://ellislab.com/)
- * @copyright	Copyright (c) 2014 - 2019, British Columbia Institute of Technology (https://bcit.ca/)
- * @license	https://opensource.org/licenses/MIT	MIT License
- * @link	https://codeigniter.com
- * @since	Version 1.0.0
- * @filesource
- */
-
-/*
- *---------------------------------------------------------------
- * APPLICATION ENVIRONMENT
- *---------------------------------------------------------------
- *
- * You can load different configurations depending on your
- * current environment. Setting the environment also influences
- * things like logging and error reporting.
- *
- * This can be set to anything, but default usage is:
- *
- *     development
- *     testing
- *     production
- *
- * NOTE: If you change these, also change the error_reporting() code below
- */
-	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
-
-/*
- *---------------------------------------------------------------
- * ERROR REPORTING
- *---------------------------------------------------------------
- *
- * Different environments will require different levels of error reporting.
- * By default development will show errors but testing and live will hide them.
- */
-switch (ENVIRONMENT)
-{
-	case 'development':
-		error_reporting(-1);
-		ini_set('display_errors', 1);
-	break;
-
-	case 'testing':
-	case 'production':
-		ini_set('display_errors', 0);
-		if (version_compare(PHP_VERSION, '5.3', '>='))
-		{
-			error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_STRICT & ~E_USER_NOTICE & ~E_USER_DEPRECATED);
-		}
-		else
-		{
-			error_reporting(E_ALL & ~E_NOTICE & ~E_STRICT & ~E_USER_NOTICE);
-		}
-	break;
-
-	default:
-		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
-		echo 'The application environment is not set correctly.';
-		exit(1); // EXIT_ERROR
-}
-
-/*
- *---------------------------------------------------------------
- * SYSTEM DIRECTORY NAME
- *---------------------------------------------------------------
- *
- * This variable must contain the name of your "system" directory.
- * Set the path if it is not in the same directory as this file.
- */
-	$system_path = 'system';
-
-/*
- *---------------------------------------------------------------
- * APPLICATION DIRECTORY NAME
- *---------------------------------------------------------------
- *
- * If you want this front controller to use a different "application"
- * directory than the default one you can set its name here. The directory
- * can also be renamed or relocated anywhere on your server. If you do,
- * use an absolute (full) server path.
- * For more info please see the user guide:
- *
- * https://codeigniter.com/user_guide/general/managing_apps.html
- *
- * NO TRAILING SLASH!
- */
-	$application_folder = 'application';
-
-/*
- *---------------------------------------------------------------
- * VIEW DIRECTORY NAME
- *---------------------------------------------------------------
- *
- * If you want to move the view directory out of the application
- * directory, set the path to it here. The directory can be renamed
- * and relocated anywhere on your server. If blank, it will default
- * to the standard location inside your application directory.
- * If you do move this, use an absolute (full) server path.
- *
- * NO TRAILING SLASH!
- */
-	$view_folder = '';
+<?php $this->load->view('template/header'); ?>
 
 
-/*
- * --------------------------------------------------------------------
- * DEFAULT CONTROLLER
- * --------------------------------------------------------------------
- *
- * Normally you will set your default controller in the routes.php file.
- * You can, however, force a custom routing by hard-coding a
- * specific controller class/function here. For most applications, you
- * WILL NOT set your routing here, but it's an option for those
- * special instances where you might want to override the standard
- * routing in a specific front controller that shares a common CI installation.
- *
- * IMPORTANT: If you set the routing here, NO OTHER controller will be
- * callable. In essence, this preference limits your application to ONE
- * specific controller. Leave the function name blank if you need
- * to call functions dynamically via the URI.
- *
- * Un-comment the $routing array below to use this feature
- */
-	// The directory name, relative to the "controllers" directory.  Leave blank
-	// if your controller is not in a sub-directory within the "controllers" one
-	// $routing['directory'] = '';
+		<section id="slider" class="slider-element slider-parallax revslider-wrap min-vh-0">
+			<div class="slider-inner">
+				<!--
+				#################################
+					- THEMEPUNCH BANNER -
+				#################################
+				-->
+				<div id="rev_slider_k_fullwidth_wrapper" class="rev_slider_wrapper fullwidth-container"  style="padding:0px;">
+					<!-- START REVOLUTION SLIDER 5.1.4 fullwidth mode -->
+					<div id="rev_slider_k_fullwidth" class="rev_slider fullwidthbanner" style="display:none;" data-version="5.1.4">
+						<ul>
+							<!-- SLIDE  -->
+							<li data-transition="fade" data-slotamount="1" data-masterspeed="1500" data-thumb="images/slider/rev/ken-2-thumb.jpg" data-delay="15000"  data-saveperformance="off"  data-title="Unlimited Possibilities">
+								<!-- MAIN IMAGE -->
+								<img src="<?php echo base_url()?>assets/imgs/slider1.jpg"  alt="kenburns6" data-bgposition="center bottom" data-bgpositionend="center top" data-kenburns="on" data-duration="25000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="140" data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg" data-no-retina>
+								<!-- LAYERS -->
 
-	// The controller class file name.  Example:  mycontroller
-	// $routing['controller'] = '';
+								<!-- LAYER NR. 2 -->
+								<div class="tp-caption ltl tp-resizeme revo-slider-caps-text text-uppercase"
+								data-x="middle" data-hoffset="0"
+								data-y="top" data-voffset="170"
+								data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
+								data-speed="800"
+								data-start="1000"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-endeasing="Power4.easeIn" style="z-index: 3; color: #333; white-space: nowrap;">Why Choose Canvas?</div>
 
-	// The controller function you wish to be called.
-	// $routing['function']	= '';
+								<div class="tp-caption ltl tp-resizeme revo-slider-emphasis-text p-0 border-0"
+								data-x="middle" data-hoffset="0"
+								data-y="top" data-voffset="185"
+								data-fontsize="['60','50','50','40']"
+								data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
+								data-speed="800"
+								data-start="1200"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-endeasing="Power4.easeIn" style="z-index: 3; color: #c6748a; white-space: nowrap;">Pink Is My Signature Color</div>
+
+								<div class="tp-caption ltl tp-resizeme revo-slider-desc-text"
+								data-x="middle" data-hoffset="0"
+								data-y="top" data-voffset="295"
+								data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
+								data-speed="800"
+								data-lineheight="['30','30','34','26']"
+								data-width="['750','750','480','360']"
+								data-start="1400"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-textAlign="center"
+								data-endeasing="Power4.easeIn" style="z-index: 3; color: #333; max-width: 650px; white-space: normal;">Create whatever you require for your Business to bloom with Tons of Customization Possibilities.</div>
+
+								<div class="tp-caption ltl tp-resizeme"
+								data-x="middle" data-hoffset="0"
+								data-y="top" data-voffset="405"
+								data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
+								data-speed="800"
+								data-start="1550"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-endeasing="Power4.easeIn" style="z-index: 3;"><a href="#" class="button button-border button-large button-rounded text-end m-0"><span>Read More</span><i class="icon-angle-right"></i></a> <a href="#" class="button button-border button-large button-rounded text-end m-0"><span>Browse</span><i class="icon-angle-right"></i></a></div>
+
+							</li>
+
+							<li class="dark" data-transition="zoomout" data-slotamount="1" data-masterspeed="1500" data-thumb="imgs/slider2.jpg"  data-saveperformance="off"  data-title="Fixed-Size Video">
+								<!-- MAIN IMAGE -->
+								<img src="<?php echo base_url()?>assets/imgs/slider2.jpg"  alt="citybg" data-lazyload="imgs/slider2.jpg" data-bgposition="center top" data-scale="cover" data-bgrepeat="no-repeat">
+								<!-- LAYERS -->
+
+								<!-- LAYER NR. 1 -->
+								<div class="tp-caption ltl tp-resizeme"
+								data-x="['left','left','left','left']" data-hoffset="['670','670','100','0']"
+								data-y="['top','top','bottom','bottom']" data-voffset="['45','45','0','0']"
+								data-transform_in="x:250;y:0;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:400;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+								data-speed="400"
+								data-start="1000"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-endeasing="Power4.easeIn"><img src="<?php echo base_url()?>assets/images/services/imac2.png" alt="imac"></div>
+
+								<div class="tp-caption ltl tp-resizeme"
+								data-x="['left','left','right','right']" data-hoffset="['1000','1000','180','0']"
+								data-y="['top','top','bottom','bottom']" data-voffset="['320','320','0','0']"
+								data-transform_in="x:0;y:100;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:400;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+								data-speed="400"
+								data-start="1200"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-endeasing="Power4.easeIn"><img src="<?php echo base_url()?>assets/images/services/iphone3.png" alt="iphone"></div>
+
+								<div class="tp-caption ltl tp-resizeme revo-slider-caps-text text-uppercase"
+								data-x="['left','left','left','left']" data-hoffset="['20','20','20','20']"
+								data-y="['top','top','top','top']" data-voffset="['165','165','165','40']"
+								data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
+								data-speed="800"
+								data-start="1000"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-endeasing="Power4.easeIn" style="white-space: nowrap;">Cancer is Tough, But So Are You</div>
+
+								<div class="tp-caption ltl tp-resizeme revo-slider-emphasis-text p-0 border-0"
+								data-x="['left','left','left','left']" data-hoffset="['17','17','17','17']"
+								data-y="['top','top','top','top']" data-voffset="['180','180','180','65']"
+								data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
+								data-fontsize="['56','56','50','40']"
+								data-speed="800"
+								data-start="1200"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-endeasing="Power4.easeIn" style="font-size: 56px; white-space: nowrap;">Breast Cancer is Treatable</div>
+
+								<div class="tp-caption ltl tp-resizeme revo-slider-desc-text text-start"
+								data-x="['left','left','left','left']" data-hoffset="['20','20','20','20']"
+								data-y="['top','top','top','top']" data-voffset="['280','280','280','165']"
+								data-width="['550','550','480','400']"
+								data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
+								data-speed="800"
+								data-start="1400"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-endeasing="Power4.easeIn" style="max-width: 550px; white-space: normal;">Canvas has Mobile Ready Design &amp; Retina Graphics Support for seamless experience on all types of Devices.</div>
+
+								<div class="tp-caption ltl tp-resizeme"
+								data-x="['left','left','left','left']" data-hoffset="['20','20','20','20']"
+								data-y="['top','top','top','top']" data-voffset="['385','385','385','270']"
+								data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
+								data-speed="800"
+								data-start="1550"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-endeasing="Power4.easeIn"><a href="#" class="button button-border button-white button-light button-large button-rounded text-end m-0"><span>Start Tour</span> <i class="icon-angle-right"></i></a></div>
+
+							</li>
+							<li class="dark" data-transition="zoomout" data-slotamount="1" data-masterspeed="1500" data-thumb="images/slider/rev/bg2-thumb.jpg"  data-saveperformance="off"  data-title="Fixed-Size Video">
+								<!-- MAIN IMAGE -->
+								<img src="<?php echo base_url()?>assets/imgs/slider3.jpg"  alt="kenburns6" data-bgposition="left bottom" data-bgpositionend="right top" data-kenburns="on" data-duration="20000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg" data-no-retina>
+								<!-- LAYERS -->
+
+								<div class="tp-caption"
+								data-x="['left','left','left','left']" data-hoffset="['20','20','30','30']"
+								data-y="['top','top','top','top']" data-voffset="['130','130','130','130']"
+								data-transform_in="x:0;y:0;z:0;rotationZ:0;scaleX:0.6;scaleY:0.6;skewX:0;skewY:0;s:850;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+								data-speed="850"
+								data-start="1200"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-videowidth="['600','500','650','420']"
+								data-videoheight="['340','283','368','238']"
+								data-endeasing="Power4.easeIn"><iframe src='https://player.vimeo.com/video/102501580?title=0&byline=0&portrait=0;api=1' width='600' height='340' style='width:600px;height:340px;border: none !important;'></iframe></div>
+
+								<div class="tp-caption ltl tp-resizeme revo-slider-caps-text text-uppercase"
+								data-x="['left','left','left','left']" data-hoffset="['675','575','30','30']"
+								data-y="['top','top','top','top']" data-voffset="['165','165','530','430']"
+								data-transform_in="x:140;y:0;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
+								data-speed="800"
+								data-start="1000"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-endeasing="Power4.easeIn" style="white-space: nowrap;">Need to show Videos?</div>
+
+								<div class="tp-caption ltl tp-resizeme revo-slider-emphasis-text p-0 border-0"
+								data-x="['left','left','left','left']" data-hoffset="['672','572','30','30']"
+								data-y="['top','top','top','top']" data-voffset="['180','180','555','455']"
+								data-fontsize="['56','50','40','30']"
+								data-transform_in="x:140;y:0;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
+								data-speed="800"
+								data-start="1200"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-endeasing="Power4.easeIn" style="font-size: 56px; white-space: nowrap;">Embedded Videos</div>
+
+								<div class="tp-caption ltl tp-resizeme revo-slider-desc-text text-start"
+								data-x="['left','left','left','left']" data-hoffset="['675','575','30','30']"
+								data-y="['top','top','top','top']" data-voffset="['280','280','655','555']"
+								data-transform_in="x:140;y:0;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
+								data-speed="800"
+								data-start="1400"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-endeasing="Power4.easeIn" style="max-width: 450px; white-space: normal;">Show off your Youtube or Vimeo Videos in Style with an Autoplay Option.</div>
+
+								<div class="tp-caption ltl tp-resizeme"
+								data-x="['left','left','left','left']" data-hoffset="['675','575','30','30']"
+								data-y="['top','top','top','top']" data-voffset="['385','385','760','630']"
+								data-transform_in="x:140;y:0;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
+								data-speed="800"
+								data-start="1550"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-endeasing="Power4.easeIn"><a href="#" class="button button-border button-white button-light button-large button-rounded text-end m-0"><span>Embed Now</span> <i class="icon-angle-right"></i></a></div>
+
+							</li>
+						</ul>
+					</div>
+				</div><!-- END REVOLUTION SLIDER -->
+			</div>
+		</section>
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+			<div class="content-wrap">
+
+				
+			
+				<div class="container clearfix">
+					<div class="row col-mb-50 mb-0">
+						<div class="col-md-8">
+							<div class="col-md-8 "> 
+								<div class="heading-block topmargin-sm">
+									<h2>Available Days</h2>
+									<span>
+										<h3>Mondays :</h3><h4> 9:30 am</h4>to <h4>4:00 pm</h4>
+									</span>
+								</div>
+							</div>
+							<div class="col-md-8 "> 
+								<div class="heading-block topmargin-sm">
+									<h2>Available Days</h2>
+									<span>
+										<h3>Mondays :</h3><h4> 9:30 am</h4>to <h4>4:00 pm</h4>
+									</span>
+								</div>
+							</div>
+						
+						</div>
+
+						<div class="col-md-4">
+							<div class="row checkout-form-billing">
+								<div class="intro_form_container">
+									<div class="intro_form_title">Make an appointment</div>
+									<form action="#" class="input-form" id="appointmentForm">
+										<div class="d-flex flex-row align-items-start justify-content-between flex-wrap ">
+											<input type="text" name="checkout-form-billing-phone" id="checkout-form-billing-phone" class="intro_input required" value="" placeholder="Your Name">
+											<input type="text" name="checkout-form-billing-phone" id="checkout-form-billing-phone" class="intro_input required" value="" placeholder="Your Email">
+											<input type="text" name="checkout-form-billing-phone" id="checkout-form-billing-phone" class="intro_input required" value="" placeholder="Your Phone">
+											<input type="text" name="checkout-form-billing-phone" id="checkout-form-billing-phone" class="intro_input required" value="" placeholder="Your Phone">
+											<input type="text" name="checkout-form-billing-phone" id="checkout-form-billing-phone" class="intro_input required" value="" placeholder="Your Phone">
+											<input type="text" name="date-picker" id="date-picker" class="intro_input datepicker hasDatepicker " value="" placeholder="Date" required>
+										
 
 
-/*
- * -------------------------------------------------------------------
- *  CUSTOM CONFIG VALUES
- * -------------------------------------------------------------------
- *
- * The $assign_to_config array below will be passed dynamically to the
- * config class when initialized. This allows you to set custom config
- * items or override any default config values found in the config.php file.
- * This can be handy as it permits you to share one application between
- * multiple front controller files, with each file containing different
- * config values.
- *
- * Un-comment the $assign_to_config array below to use this feature
- */
-	// $assign_to_config['name_of_config_item'] = 'value of config item';
+										</div>
+										<button class="button button_1 intro_button trans_200">Make an appointment</button>
 
+									</form>
+								</div>
+								</div>
+							</div>
+						</div>
+						<div class="w-100"></div>
+					<div class="row col-mb-50">
 
+						<div class="col-sm-6 col-lg-4">
+							<div class="feature-box fbox-effect">
+								<div class="fbox-icon">
+									<a href="#"><i class="icon-screen i-alt"></i></a>
+								</div>
+								<div class="fbox-content">
+									<h3>Responsive Layout</h3>
+									<p>Powerful Layout with Responsive functionality that can be adapted to any screen size. Resize browser to view.</p>
+								</div>
+							</div>
+						</div>
 
-// --------------------------------------------------------------------
-// END OF USER CONFIGURABLE SETTINGS.  DO NOT EDIT BELOW THIS LINE
-// --------------------------------------------------------------------
+						<div class="col-sm-6 col-lg-4">
+							<div class="feature-box fbox-effect">
+								<div class="fbox-icon">
+									<a href="#"><i class="icon-eye i-alt"></i></a>
+								</div>
+								<div class="fbox-content">
+									<h3>Retina Ready Graphics</h3>
+									<p>Looks beautiful &amp; ultra-sharp on Retina Screen Displays. Retina Icons, Fonts &amp; all others graphics are optimized.</p>
+								</div>
+							</div>
+						</div>
 
-/*
- * ---------------------------------------------------------------
- *  Resolve the system path for increased reliability
- * ---------------------------------------------------------------
- */
+						<div class="col-sm-6 col-lg-4">
+							<div class="feature-box fbox-effect">
+								<div class="fbox-icon">
+									<a href="#"><i class="icon-beaker i-alt"></i></a>
+								</div>
+								<div class="fbox-content">
+									<h3>Powerful Performance</h3>
+									<p>Canvas includes tons of optimized code that are completely customizable and deliver unmatched fast performance.</p>
+								</div>
+							</div>
+						</div>
 
-	// Set the current directory correctly for CLI requests
-	if (defined('STDIN'))
-	{
-		chdir(dirname(__FILE__));
-	}
+						<div class="col-sm-6 col-lg-4">
+							<div class="feature-box fbox-effect">
+								<div class="fbox-icon">
+									<a href="#"><i class="icon-stack i-alt"></i></a>
+								</div>
+								<div class="fbox-content">
+									<h3>Premium Sliders Included</h3>
+									<p>Canvas included 20+ custom designed Slider Pages with Premium Sliders like Layer, Revolution, Swiper &amp; others.</p>
+								</div>
+							</div>
+						</div>
 
-	if (($_temp = realpath($system_path)) !== FALSE)
-	{
-		$system_path = $_temp.DIRECTORY_SEPARATOR;
-	}
-	else
-	{
-		// Ensure there's a trailing slash
-		$system_path = strtr(
-			rtrim($system_path, '/\\'),
-			'/\\',
-			DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
-		).DIRECTORY_SEPARATOR;
-	}
+						<div class="col-sm-6 col-lg-4">
+							<div class="feature-box fbox-effect">
+								<div class="fbox-icon">
+									<a href="#"><i class="icon-tint i-alt"></i></a>
+								</div>
+								<div class="fbox-content">
+									<h3>Unlimited Color Options</h3>
+									<p>Change the color scheme of the Theme in a flash just by changing the 6-digit HEX code in the colors.php file.</p>
+								</div>
+							</div>
+						</div>
 
-	// Is the system path correct?
-	if ( ! is_dir($system_path))
-	{
-		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
-		echo 'Your system folder path does not appear to be set correctly. Please open the following file and correct this: '.pathinfo(__FILE__, PATHINFO_BASENAME);
-		exit(3); // EXIT_CONFIG
-	}
+						<div class="col-sm-6 col-lg-4">
+							<div class="feature-box fbox-effect">
+								<div class="fbox-icon">
+									<a href="#"><i class="icon-text-width i-alt"></i></a>
+								</div>
+								<div class="fbox-content">
+									<h3>CUSTOMIZABLE FONTS</h3>
+									<p>Use any Font you like from Google Web Fonts, Typekit or other Web Fonts. They will blend in perfectly.</p>
+								</div>
+							</div>
+						</div>
 
-/*
- * -------------------------------------------------------------------
- *  Now that we know the path, set the main path constants
- * -------------------------------------------------------------------
- */
-	// The name of THIS file
-	define('SELF', pathinfo(__FILE__, PATHINFO_BASENAME));
+					</div>
 
-	// Path to the system directory
-	define('BASEPATH', $system_path);
+					<div class="clear"></div><div class="line"></div>
 
-	// Path to the front controller (this file) directory
-	define('FCPATH', dirname(__FILE__).DIRECTORY_SEPARATOR);
+					<div id="oc-clients-full" class="owl-carousel image-carousel carousel-widget" data-margin="30" data-nav="false" data-loop="true" data-autoplay="5000" data-pagi="false" data-items-xs="2" data-items-sm="3" data-items-md="4" data-items-lg="5" data-items-xl="6">
 
-	// Name of the "system" directory
-	define('SYSDIR', basename(BASEPATH));
+						<a href="#"><img src="<?php echo base_url()?>assets/images/clients/1.png" alt="Clients"></a>
+						<a href="#"><img src="<?php echo base_url()?>assets/images/clients/2.png" alt="Clients"></a>
+						<a href="#"><img src="<?php echo base_url()?>assets/images/clients/3.png" alt="Clients"></a>
+						<a href="#"><img src="<?php echo base_url()?>assets/images/clients/4.png" alt="Clients"></a>
+						<a href="#"><img src="<?php echo base_url()?>assets/images/clients/5.png" alt="Clients"></a>
+						<a href="#"><img src="<?php echo base_url()?>assets/images/clients/6.png" alt="Clients"></a>
+						<a href="#"><img src="<?php echo base_url()?>assets/images/clients/7.png" alt="Clients"></a>
+						<a href="#"><img src="<?php echo base_url()?>assets/images/clients/8.png" alt="Clients"></a>
+						<a href="#"><img src="<?php echo base_url()?>assets/images/clients/9.png" alt="Clients"></a>
+						<a href="#"><img src="<?php echo base_url()?>assets/images/clients/10.png" alt="Clients"></a>
+						<a href="#"><img src="<?php echo base_url()?>assets/images/clients/11.png" alt="Clients"></a>
+						<a href="#"><img src="<?php echo base_url()?>assets/images/clients/12.png" alt="Clients"></a>
 
-	// The path to the "application" directory
-	if (is_dir($application_folder))
-	{
-		if (($_temp = realpath($application_folder)) !== FALSE)
-		{
-			$application_folder = $_temp;
-		}
-		else
-		{
-			$application_folder = strtr(
-				rtrim($application_folder, '/\\'),
-				'/\\',
-				DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
-			);
-		}
-	}
-	elseif (is_dir(BASEPATH.$application_folder.DIRECTORY_SEPARATOR))
-	{
-		$application_folder = BASEPATH.strtr(
-			trim($application_folder, '/\\'),
-			'/\\',
-			DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
-		);
-	}
-	else
-	{
-		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
-		echo 'Your application folder path does not appear to be set correctly. Please open the following file and correct this: '.SELF;
-		exit(3); // EXIT_CONFIG
-	}
+					</div>
 
-	define('APPPATH', $application_folder.DIRECTORY_SEPARATOR);
+				</div>
+			</div>
+		</section><!-- #content end -->
 
-	// The path to the "views" directory
-	if ( ! isset($view_folder[0]) && is_dir(APPPATH.'views'.DIRECTORY_SEPARATOR))
-	{
-		$view_folder = APPPATH.'views';
-	}
-	elseif (is_dir($view_folder))
-	{
-		if (($_temp = realpath($view_folder)) !== FALSE)
-		{
-			$view_folder = $_temp;
-		}
-		else
-		{
-			$view_folder = strtr(
-				rtrim($view_folder, '/\\'),
-				'/\\',
-				DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
-			);
-		}
-	}
-	elseif (is_dir(APPPATH.$view_folder.DIRECTORY_SEPARATOR))
-	{
-		$view_folder = APPPATH.strtr(
-			trim($view_folder, '/\\'),
-			'/\\',
-			DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
-		);
-	}
-	else
-	{
-		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
-		echo 'Your view folder path does not appear to be set correctly. Please open the following file and correct this: '.SELF;
-		exit(3); // EXIT_CONFIG
-	}
-
-	define('VIEWPATH', $view_folder.DIRECTORY_SEPARATOR);
-
-/*
- * --------------------------------------------------------------------
- * LOAD THE BOOTSTRAP FILE
- * --------------------------------------------------------------------
- *
- * And away we go...
- */
-require_once BASEPATH.'core/CodeIgniter.php';
+<?php $this->load->view('template/footer'); ?>
