@@ -44,5 +44,33 @@ class Base extends CI_Controller
 			redirect('login');
 		}
 	}
+	public function about_us(){
+		$this->load->view('my_views/about_us.php');
+	}
+	public function treatment(){
+			$this->load->view('my_views/treatment.php');
+	}
+	public function diagnosis(){
+			$this->load->view('my_views/diagnosis.php');
+	}
+	public function early_breast_cancer_treatment(){
+			$this->load->view('my_views/early_breast_cancer_treatment.php');
+	}
+	public function medical_oncology(){
+			$this->load->view('my_views/medical_oncology.php');
+	}
+	public function contact_us(){
+			$this->load->view('my_views/contact_us.php');
+	}
+	public function appointment(){
+		$this->load->view('my_views/appointment.php');
+	}
+	public function blog(){
+		$this->load->view('my_views/blog.php');
+	}
+	public function book(){
+		$this->load->view('my_views/book.php');
+	}
+
 
 }

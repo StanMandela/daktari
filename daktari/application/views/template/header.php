@@ -28,6 +28,8 @@
 	<script src="https://cdn.tailwindcss.com/"></script>
 	<!-- Document Title
 	============================================= -->
+	<link rel="icon" type="image/x-icon" href="<?php echo base_url() ?>/assets/imgs/logopit.jpg">
+
 	<title>Dr. Ronald Wasike| Breast Cancer Surgeon</title>
 
 	<style>
@@ -63,6 +65,7 @@
 	</style>
 
 </head>
+
 <body class="stretched">
 
 <!-- Document Wrapper
@@ -83,8 +86,8 @@
 					<!-- Logo
 ============================================= -->
 					<div id="logo">
-						<a href="index.html" class="standard-logo" data-dark-logo="<?php echo base_url()?>assets/images/logo-dark.png"><img src="<?php echo base_url()?>assets/images/logo.png" alt="CanvasX Logo"></a>
-						<a href="index.html" class="retina-logo" data-dark-logo="<?php echo base_url()?>assets/images/logo-dark@2x.png"><img src="<?php echo base_url()?>assets/images/logo@2x.png" alt="CanvasZ Logo"></a>
+						<a href="<?php echo base_url() ?>" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="<?php echo base_url()?>/assets/imgs/logopit.jpg" alt="Dr.Ronald Wasike"></a>
+						<a href="<?php echo base_url() ?>" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="<?php echo base_url()?>assets/imgs/logopit.png" alt="DocLogo"></a>
 					</div><!-- #logo end -->
 
 					<div class="header-misc">
@@ -115,10 +118,10 @@
 							</li>
 							<li class="menu-item">
 								<a class="menu-link" href="<?php echo base_url()?>about_us"><div>About Us</div></a>
-
+								<!--									</ul>-->
 							</li>
 							<li class="menu-item mega-menu">
-								<a class="menu-link" href="<?php echo base_url()?>services"><div>Services</div></a>
+								<a class="menu-link" href="#"><div>Services</div></a>
 								<div class="mega-menu-content mega-menu-style-2">
 									<div class="container">
 										<div class="row">
@@ -127,13 +130,13 @@
 													<a class="menu-link" href="<?php echo base_url()?>diagnosis"><div>DIAGNOSIS</div></a>
 													<ul class="sub-menu-container">
 														<li class="menu-item">
-															<a class="menu-link" href="<?php echo base_url()?>consultation"><div>Consultation</div></a>
+															<a class="menu-link" href="portfolio-1.html"><div>Consulation</div></a>
 														</li>
 														<li class="menu-item">
-															<a class="menu-link" href="<?php echo base_url()?>radiology"><div>Radiology</div></a>
+															<a class="menu-link" href="portfolio-2.html"><div>Radiology</div></a>
 														</li>
 														<li class="menu-item">
-															<a class="menu-link" href="<?php echo base_url()?>pathology"><div>Pathology</div></a>
+															<a class="menu-link" href="portfolio-3.html"><div>Pathology</div></a>
 														</li>
 													</ul>
 												</li>
@@ -143,13 +146,13 @@
 													<a class="menu-link" href="<?php echo base_url()?>medical_oncology"><div>Medical Oncology</div></a>
 													<ul class="sub-menu-container">
 														<li class="menu-item">
-															<a class="menu-link" href="<?php echo base_url()?>chemotherapy"><div>Chemotherapy</div></a>
+															<a class="menu-link" href="portfolio-mixed-masonry.html"><div>Chemotherapy</div></a>
 														</li>
 														<li class="menu-item">
-															<a class="menu-link" href="<?php echo base_url()?>hormonal_therapy"><div>Hormonal Therapy</div></a>
+															<a class="menu-link" href="portfolio-2-masonry.html"><div>Hormonal Therapy</div></a>
 														</li>
 														<li class="menu-item">
-															<a class="menu-link" href="<?php echo base_url()?>reconstructive_ps"><div>Reconstructive Plastic Surgery</div></a>
+															<a class="menu-link" href="portfolio-3-masonry.html"><div>Reconstructive Plastic Surgery</div></a>
 														</li>
 
 													</ul>
@@ -161,179 +164,47 @@
 													<a class="menu-link" href="<?php echo base_url()?>treatment"><div>Treatment</div></a>
 													<ul class="sub-menu-container">
 														<li class="menu-item">
-															<a class="menu-link" href="portfolio-single-extended.html"><div>Surgery</div></a>
+															<a class="menu-link" href="<?php echo base_url()?>treatment"><div>Surgery</div></a>
 														</li>
 														<li class="menu-item">
-															<a class="menu-link" href="portfolio-single-fullwidth.html"><div>Chemotherapy</div></a>
+															<a class="menu-link" href="<?php echo base_url()?>treatment"><div>Chemotherapy</div></a>
 														</li>
 														<li class="menu-item">
-															<a class="menu-link" href="portfolio-single-gallery-full.html"><div>Radiation Therapy</div></a>
+															<a class="menu-link" href="<?php echo base_url()?>treatment"><div>Radiation Therapy</div></a>
 														</li>
-													</ul>
-												</li>
-											</ul>
-											<ul class="sub-menu-container mega-menu-column col">
-												<li class="menu-item mega-menu-title">
-													<a class="menu-link" href="#"><div>Early Breast Cancer Treatment</div></a>
-													<ul class="sub-menu-container">
+
 														<li class="menu-item">
-															<a class="menu-link" href="portfolio-nomargin.html"><div>Breast Conservation Surgery</div></a>
-														</li>
-														<li class="menu-item">
-															<a class="menu-link" href="portfolio-1-alt-right-sidebar.html"><div>Sentinel lymph node biopsy</div></a>
+															<a class="menu-link" href="<?php echo base_url()?>early_breast_cancer_treatment"><div>Early Breast Cancer Treatment</div></a>
+															<ul class="sub-menu-container mega-menu-dropdown">
+																<li class="menu-item">
+																	<a class="menu-link" href="<?php echo base_url()?>early_breast_cancer_treatment"><div>Breast Conservation Surgery</div></a>
+																</li>
+																<li class="menu-item">
+																	<a class="menu-link" href="<?php echo base_url()?>early_breast_cancer_treatment"><div>Sentinel lymph node biopsy</div></a>
+																</li>
+																<li class="menu-item">
+																	<a class="menu-link" href="<?php echo base_url()?>early_breast_cancer_treatment"><div>Oncoplastic Surgery and reconstruction</div></a>
+																</li>
+																<li class="menu-item">
+																	<a class="menu-link" href="<?php echo base_url()?>early_breast_cancer_treatment"><div>Mastectomy / Axillary lymph node dissection </div></a>
+																</li>
+															</ul>
 														</li>
 
 													</ul>
 												</li>
 											</ul>
+
 										</div>
 									</div>
 								</div>
 
 							</li>
 							<li class="menu-item mega-menu">
-								<a class="menu-link" href="#"><div>News</div></a>
+								<a class="menu-link" href="<?php echo base_url()?>blog"><div>News</div></a>
 							</li>
 							<li class="menu-item mega-menu">
-								<a class="menu-link" href="#"><div>Contact us</div></a>
-								<div class="mega-menu-content mega-menu-style-2">
-									<div class="container">
-										<div class="row">
-											<ul class="sub-menu-container mega-menu-column col-lg-3">
-												<li class="menu-item mega-menu-title">
-													<a class="menu-link" href="#"><div>Default</div></a>
-													<ul class="sub-menu-container">
-														<li class="menu-item">
-															<a class="menu-link" href="blog.html"><div>Right Sidebar</div></a>
-														</li>
-														<li class="menu-item">
-															<a class="menu-link" href="blog-left-sidebar.html"><div>Left Sidebar</div></a>
-														</li>
-														<li class="menu-item">
-															<a class="menu-link" href="blog-both-sidebar.html"><div>Both Sidebar</div></a>
-														</li>
-														<li class="menu-item">
-															<a class="menu-link" href="blog-full-width.html"><div>Full Width</div></a>
-														</li>
-													</ul>
-												</li>
-												<li class="menu-item mega-menu-title">
-													<a class="menu-link" href="#"><div>Timeline</div></a>
-													<ul class="sub-menu-container">
-														<li class="menu-item">
-															<a class="menu-link" href="blog-timeline-right-sidebar.html"><div>Right Sidebar</div></a>
-														</li>
-														<li class="menu-item">
-															<a class="menu-link" href="blog-timeline-left-sidebar.html"><div>Left Sidebar</div></a>
-														</li>
-														<li class="menu-item">
-															<a class="menu-link" href="blog-timeline.html"><div>Full Width</div></a>
-														</li>
-													</ul>
-												</li>
-											</ul>
-											<ul class="sub-menu-container mega-menu-column col-lg-3">
-												<li class="menu-item mega-menu-title">
-													<a class="menu-link" href="#"><div>Masonry</div></a>
-													<ul class="sub-menu-container">
-														<li class="menu-item">
-															<a class="menu-link" href="blog-masonry.html"><div>4 Columns</div></a>
-														</li>
-														<li class="menu-item">
-															<a class="menu-link" href="blog-masonry-3.html"><div>3 Columns</div></a>
-														</li>
-														<li class="menu-item">
-															<a class="menu-link" href="blog-masonry-2.html"><div>2 Columns</div></a>
-														</li>
-														<li class="menu-item">
-															<a class="menu-link" href="blog-masonry-full.html"><div>100% Width</div></a>
-														</li>
-													</ul>
-												</li>
-												<li class="menu-item mega-menu-title">
-													<a class="menu-link" href="#"><div>Grid</div></a>
-													<ul class="sub-menu-container">
-														<li class="menu-item">
-															<a class="menu-link" href="blog-grid.html"><div>4 Columns</div></a>
-														</li>
-														<li class="menu-item">
-															<a class="menu-link" href="blog-grid-3.html"><div>3 Columns</div></a>
-														</li>
-														<li class="menu-item">
-															<a class="menu-link" href="blog-grid-2.html"><div>2 Columns</div></a>
-														</li>
-													</ul>
-												</li>
-											</ul>
-											<ul class="sub-menu-container mega-menu-column col-lg-3">
-												<li class="menu-item mega-menu-title">
-													<a class="menu-link" href="#"><div>Small Thumbs</div></a>
-													<ul class="sub-menu-container">
-														<li class="menu-item">
-															<a class="menu-link" href="blog-small-left-sidebar.html"><div>Left Sidebar</div></a>
-														</li>
-														<li class="menu-item">
-															<a class="menu-link" href="blog-small.html"><div>Right Sidebar</div></a>
-														</li>
-														<li class="menu-item">
-															<a class="menu-link" href="blog-small-both-sidebar.html"><div>Both Sidebar</div></a>
-														</li>
-														<li class="menu-item">
-															<a class="menu-link" href="blog-small-full-width.html"><div>Full Width</div></a>
-														</li>
-														<li class="menu-item">
-															<a class="menu-link" href="blog-small-alt.html"><div>Alternate Layout</div></a>
-														</li>
-													</ul>
-												</li>
-												<li class="menu-item mega-menu-title">
-													<a class="menu-link" href="#"><div>Item Splitting</div></a>
-													<ul class="sub-menu-container">
-														<li class="menu-item">
-															<a class="menu-link" href="blog-grid.html"><div>Pagination</div></a>
-														</li>
-														<li class="menu-item">
-															<a class="menu-link" href="blog-masonry.html"><div>Infinite Scroll</div></a>
-														</li>
-													</ul>
-												</li>
-											</ul>
-											<ul class="sub-menu-container mega-menu-column col-lg-3">
-												<li class="menu-item mega-menu-title">
-													<a class="menu-link" href="#"><div>Single</div></a>
-													<ul class="sub-menu-container">
-														<li class="menu-item">
-															<a class="menu-link" href="blog-single.html"><div>Default Layout</div></a>
-														</li>
-														<li class="menu-item">
-															<a class="menu-link" href="blog-single-left-sidebar.html"><div>Left Sidebar</div></a>
-														</li>
-														<li class="menu-item">
-															<a class="menu-link" href="blog-single-full.html"><div>Full Width</div></a>
-														</li>
-														<li class="menu-item">
-															<a class="menu-link" href="blog-single-small.html"><div>Small Image</div></a>
-														</li>
-														<li class="menu-item">
-															<a class="menu-link" href="blog-single-split-right-sidebar.html"><div>Split Layout</div></a>
-														</li>
-													</ul>
-												</li>
-												<li class="menu-item mega-menu-title">
-													<a class="menu-link" href="#"><div>Comments Module</div></a>
-													<ul class="sub-menu-container">
-														<li class="menu-item">
-															<a class="menu-link" href="blog-single-left-sidebar.html#comments"><div>Facebook Comments</div></a>
-														</li>
-														<li class="menu-item">
-															<a class="menu-link" href="blog-single-small.html#comments"><div>Disqus Comments</div></a>
-														</li>
-													</ul>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
+								<a class="menu-link" href="<?php echo base_url()?>contact_us"><div>Contact us</div></a>
 							</li>
 							<li class="menu-item mega-menu">
 								<a class="menu-link" href="#"><button class ="button button-reveal button-large button-circle text-end m-0">Make An Appointment</button></a>
@@ -489,5 +360,3 @@
 		</div>
 		<div class="header-wrap-clone"></div>
 	</header><!-- #header end -->
-
-

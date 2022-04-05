@@ -52,10 +52,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 //admin routes
 $route['default_controller'] = 'Base';
-$route['admin_dash'] = 'Admin/dashboard';
-$route['medical_oncology'] = 'Admin/dashboard';
-$route['diagnosis'] = 'Admin/dashboard';
-$route['treatment'] = 'Admin/dashboard';
+$route['admin_dash'] = 'Base/dashboard';
+$route['medical_oncology'] = 'Base/medical_oncology';
+$route['diagnosis'] = 'Base/diagnosis';
+$route['treatment'] = 'Base/treatment';
+$route['early_breast_cancer_treatment'] = 'Base/early_breast_cancer_treatment';
+$route['about_us'] = 'Base/about_us';
+$route['contact_us'] = 'Base/contact_us';
+$route['appointment'] = 'Base/appointment';
+$route['blog'] = 'Base/blog';
+$route['book'] = 'Base/book';
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

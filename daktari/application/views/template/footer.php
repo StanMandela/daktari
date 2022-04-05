@@ -1,5 +1,6 @@
+
 <!-- Footer
-	============================================= -->
+============================================= -->
 <footer id="footer" class="dark">
 	<div class="container">
 
@@ -8,53 +9,56 @@
 		<div class="footer-widgets-wrap">
 
 			<div class="row col-mb-50">
-				<div class="col-lg-8">
+				<div class="col-lg-10">
 
 					<div class="row col-mb-50">
+						<div class="col-md-2">
+							<div class="widget clearfix">
+								<img src="<?php echo base_url() ?>/assets/imgs/logopit.jpg" alt="Image" class="footer-logo">
+
+							</div>
+						</div>
 						<div class="col-md-4">
 
 							<div class="widget clearfix">
 
-								<img src="<?php echo base_url()?>assets/images/footer-widget-logo.png" alt="Image" class="footer-logo">
 
-								<p>We believe in <strong>Simple</strong>, <strong>Creative</strong> &amp; <strong>Flexible</strong> Design Standards.</p>
+								<p>We believe in <strong>Quality</strong>, <strong></strong> &amp; <strong>Dependable</strong> Health Care.</p>
 
-								<div style="<?php echo base_url()?>assets/background: url('images/world-map.png') no-repeat center center; background-size: 100%;">
+								<div style="background: url('images/world-map.png') no-repeat center center; background-size: 100%;">
 									<address>
 										<strong>Headquarters:</strong><br>
-										795 Folsom Ave, Suite 600<br>
-										San Francisco, CA 94107<br>
+										Aga Khan Doctors Plaza<br>
+										Room 324<br>
 									</address>
-									<abbr title="Phone Number"><strong>Phone:</strong></abbr> (1) 8547 632521<br>
-									<abbr title="Fax"><strong>Fax:</strong></abbr> (1) 11 4752 1433<br>
-									<abbr title="Email Address"><strong>Email:</strong></abbr> info@canvas.com
+									<abbr title="Phone Number"><strong>Phone:</strong></abbr> (254) 711 092 763<br>
+									<abbr title="Email Address"><strong>Email:</strong></abbr> ronewamalwa62@gmail.com
 								</div>
 
 							</div>
 
 						</div>
 
-						<div class="col-md-4">
+						<div class="col-md-3">
 
 							<div class="widget widget_links clearfix">
 
-								<h4>Blogroll</h4>
+								<h4>Site Map</h4>
 
 								<ul>
-									<li><a href="https://codex.wordpress.org/">Documentation</a></li>
-									<li><a href="https://wordpress.org/support/forum/requests-and-feedback">Feedback</a></li>
-									<li><a href="https://wordpress.org/extend/plugins/">Plugins</a></li>
-									<li><a href="https://wordpress.org/support/">Support Forums</a></li>
-									<li><a href="https://wordpress.org/extend/themes/">Themes</a></li>
-									<li><a href="https://wordpress.org/news/">Canvas Blog</a></li>
-									<li><a href="https://planet.wordpress.org/">Canvas Planet</a></li>
+									<li><a href="">Home</a></li>
+									<li><a href="">Services</a></li>
+									<li><a href="">Book Appointment</a></li>
+									<li><a href="https://wordpress.org/support/">News</a></li>
+									<li><a href="https://wordpress.org/extend/themes/">Book</a></li>
+
 								</ul>
 
 							</div>
 
 						</div>
 
-						<div class="col-md-4">
+						<div class="col-md-3">
 
 							<div class="widget clearfix">
 								<h4>Recent Posts</h4>
@@ -64,11 +68,11 @@
 										<div class="grid-inner row">
 											<div class="col">
 												<div class="entry-title">
-													<h4><a href="#">Lorem ipsum dolor sit amet, consectetur</a></h4>
+													<h4><a href="#">How Tusiime won battle against breast cancer</a></h4>
 												</div>
 												<div class="entry-meta">
 													<ul>
-														<li>10th July 2021</li>
+														<li>07th Jan 2021</li>
 													</ul>
 												</div>
 											</div>
@@ -79,11 +83,11 @@
 										<div class="grid-inner row">
 											<div class="col">
 												<div class="entry-title">
-													<h4><a href="#">Elit Assumenda vel amet dolorum quasi</a></h4>
+													<h4><a href="#">Prof. Ronald Wasike: Speaking about NHIF payments for cancer patients</a></h4>
 												</div>
 												<div class="entry-meta">
 													<ul>
-														<li>10th July 2021</li>
+														<li>10th Feb 2021</li>
 													</ul>
 												</div>
 											</div>
@@ -112,7 +116,7 @@
 
 				</div>
 
-				<div class="col-lg-4">
+				<div class="col-lg-2">
 
 					<div class="row col-mb-50">
 						<div class="col-md-4 col-lg-12">
@@ -120,12 +124,12 @@
 
 								<div class="row">
 									<div class="col-lg-6 bottommargin-sm">
-										<div class="counter counter-small"><span data-from="50" data-to="15065421" data-refresh-interval="80" data-speed="3000" data-comma="true"></span></div>
-										<h5 class="mb-0">Total Downloads</h5>
+										<div class="counter counter-small"><span data-from="0" data-to="500" data-refresh-interval="80" data-speed="1000" data-comma="true"></span>+</div>
+										<h5 class="mb-0">Total Bookings</h5>
 									</div>
 
 									<div class="col-lg-6 bottommargin-sm">
-										<div class="counter counter-small"><span data-from="100" data-to="18465" data-refresh-interval="50" data-speed="2000" data-comma="true"></span></div>
+										<div class="counter counter-small"><span data-from="0" data-to="100" data-refresh-interval="50" data-speed="1000" data-comma="true"></span>+</div>
 										<h5 class="mb-0">Clients</h5>
 									</div>
 								</div>
@@ -187,8 +191,7 @@
 			<div class="row col-mb-30">
 
 				<div class="col-md-6 text-center text-md-start">
-					Copyrights &copy; 2020 All Rights Reserved by Canvas Inc.<br>
-					<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
+					Copyrights &copy; 2022 All Rights Reserved <br>
 				</div>
 
 				<div class="col-md-6 text-center text-md-end">
@@ -236,7 +239,7 @@
 
 					<div class="clear"></div>
 
-					<i class="icon-envelope2"></i> info@canvas.com <span class="middot">&middot;</span> <i class="icon-headphones"></i> +1-11-6541-6369 <span class="middot">&middot;</span> <i class="icon-skype2"></i> CanvasOnSkype
+					Developed by: <i class="icon-envelope2"></i>  smstan8@gmail.com <span class="middot">&middot;</span> <i class="icon-headphones"></i> +254 753 510 013<span class="middot">&middot;</span>
 				</div>
 
 			</div>
@@ -270,7 +273,7 @@
 <script src="<?php echo base_url()?>assets/include/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script>
 <script src="<?php echo base_url()?>assets/include/rs-plugin/js/extensions/revolution.extension.kenburn.min.js"></script>
 <script src="<?php echo base_url()?>assets/include/rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
-<script src="<?php echo base_url()?>assets/assets/include/rs-plugin/js/extensions/revolution.extension.migration.min.js"></script>
+<script src="<?php echo base_url()?>assets/include/rs-plugin/js/extensions/revolution.extension.migration.min.js"></script>
 <script src="<?php echo base_url()?>assets/include/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
 
 <script>
